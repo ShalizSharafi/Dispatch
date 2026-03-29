@@ -1,0 +1,33 @@
+@import 'tailwindcss';
+
+@layer base{
+       body{
+              font-family: Inter,serif;
+       }
+       @font-face {
+              font-family: Inter;
+              src: url(../fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+       }
+}
+
+@layer utilities{
+       .row{
+              @apply flex flex-wrap w-full
+       }
+}
+
+@layer components{
+       .card{
+              @apply flex flex-wrap  h-[450px] md:h-[420px] lg:h-[350px] *:w-full opacity-0 lg:opacity-100  animate-fadein lg:translate-none lg:animate-none
+              
+       }
+}
+
+@theme{
+       --animate-fadein:fadein .8s ease forwards;
+       @keyframes fadein{
+              to{opacity:1; 
+              }
+              
+       }
+}
