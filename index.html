@@ -15,7 +15,7 @@
         class="flex w-1/2 lg:w-1/4 justify-start lg:justify-start items-center "
       >
         <div
-          class="flex w-[175px]  h-[27px] bg-red-400 *:h-full *:flex *:items-center *:tracking-[5px] border border-white *:font-[700] *:text-[20px]"
+          class="flex w-[175px]  h-[27px]  *:h-full *:flex *:items-center *:tracking-[5px] border border-white *:font-[700] *:text-[20px]"
         >
           <span class="w-1/3 bg-black text-white justify-end">DIS</span>
           <span class="pl-1 w-2/3 bg-white text-black justify-start"
@@ -110,25 +110,80 @@
       </div>
     </header>
     <!-- section 1 /////////////////////////////////////////////////////////////////////////////-->
-    <section
-      class="w-full  px-5 md:px-7  lg:px-[60px] xl:px-[100px] pt-[100px] md:pt-[90px] lg:pt-[85px] pb-[40px]"
+     <section class="w-full flex flex-wrap px-4 gap-8 xl:gap-0 lg:px-[70px] pt-[100px] md:pt-[90px] lg:pt-[85px] pb-[40px]">
+      <div class="w-full xl:w-1/4 px-2 order-2 xl:order-1 flex flex-wrap gap-5  h-fit">
+        <div class="w-full flex flex-wrap content-start h-fit "> 
+          <img src="images/1.avif" alt="" class="hover:grayscale-100 w-full  xl:w-full object-cover rounded ">
+          <div class="w-full  flex-wrap flex items-center  justify-center py-6">
+            <h4 class="text-[25px] xl:text-[18px] font-bold w-full hover:text-gray-600 mb-2.5">The Future of Business and Innovation</h4>
+            <span class="text-[12px] w-full">Aug 25 .
+Business</span>
+          </div>
+        </div>
+        <div class="w-full flex flex-wrap content-start h-fit">
+          <img src="images/3.avif" alt="" class="hover:grayscale-100 w-full  xl:w-full object-cover rounded ">
+          <div class="w-full  flex-wrap flex items-center  justify-center py-6">
+            <h4 class="text-[25px] xl:text-[18px] font-bold w-full hover:text-gray-600 mb-2.5">Exploring New Frontiers of Creativity</h4>
+            <span class="text-[12px] w-full">Feb 2 .
+Science</span>
+          </div>
+        </div>
+      </div>
+      <div class="w-full flex flex-wrap xl:w-2/4 px-2 order-1 xl:order-2">
+        <img src="images/2.avif" alt="" class="hover:grayscale-100 w-full object-cover rounded">
+        <div class="border border-white flex-wrap text-[40px] py-5 w-full flex items-center justify-start ">
+          <h3 class="text[18px] sm:text-[25px] md:text-[30px] lg:text-[35px] xl:text-[50px] font-bold hover:text-gray-600 mb-2.5">Transforming Visions Into Solutions for Your Business</h3>
+          <span class="text-[14px] sm:text-[17px] md:text-[18px] lg:text-[22px] xl:text-[25px]">Coverage on Market Trends, Industry Innovations, and Strategic Moves</span>
+        </div>
+      </div>
+      <div class="  w-full xl:w-1/4 px-2 order-3 xl:order-3 flex flex-wrap gap-5 h-fit">
+        <div class="w-full flex flex-wrap content-start h-fit gap-4">
+          <div class="border-b w-full">
+            <h4 class="flex justify-start w-full text-[25px] xl:text-[24px] font-bold w-full hover:text-gray-600 mb-2.5">Trends and Inspiration</h4>
+            <span class="flex w-full text-[12px] w-full pb-2.5">Nov 22 .
+Science</span>
+          </div>
+          <div class="border-b w-full">
+            <h4 class="flex justify-start w-full text-[25px] xl:text-[24px] font-bold w-full hover:text-gray-600 mb-2.5">Expressions Unveiled</h4>
+            <span class="flex w-full text-[12px] w-full pb-2.5">Sep 14 .
+Business</span>
+          </div>
+          <div class="border-b w-full">
+            <h4 class="flex justify-start w-full text-[25px] xl:text-[24px] font-bold w-full hover:text-gray-600 mb-2.5">Refined Style Insights</h4>
+            <span class="flex w-full text-[12px] w-full pb-2.5">Apr 10 .
+Economy
+</span>
+          </div>
+        </div>
+        <div class="w-full flex flex-wrap content-start h-fit"> 
+          <img src="images/4.avif" alt="" class="hover:grayscale-100 w-full  xl:w-full object-cover rounded ">
+          <div class="w-full  flex-wrap flex items-center  justify-center py-6">
+            <h4 class="text-[25px] xl:text-[18px] font-bold w-full hover:text-gray-600 mb-2.5">Exploring Functionality in Everyday Design</h4>
+            <span class="text-[12px] w-full">Feb 17 .
+Science</span>
+          </div>
+        </div>
+      </div>
+     </section>
+    <!-- <section
+      class="w-full px-5 md:px-7  lg:px-[60px] xl:px-[100px] pt-[100px] md:pt-[90px] lg:pt-[85px] pb-[40px]"
     >
-      <div class="row  *:grow-1  gap-8 ">
+      <div class="row *:grow-1  gap-8 ">
         <div
           class="w-full flex flex-wrap order-2 lg:order-1 lg:w-1/6 gap-5  content-start"
         >
           <div class="w-full card">
-              <img src="images/1.avif" alt="" class="h-3/5 object-cover hover:grayscale-75 duration-400">
+              <img src="images/1.avif" alt="" class="h-3/5 rounded object-cover hover:grayscale-75 duration-400">
               <div class="h-2/5 flex flex-wrap *:w-full  content-center gap-4">
-                     <h3 class="text-[30px] lg:text-[18px] font-[600]">The Future of Business and Innovation</h3>
+                     <h3 class="text-[30px] hover:text-gray-700 duration-400 lg:text-[18px] font-[600]">The Future of Business and Innovation</h3>
                      <span class="text-[16px] lg:text-[14px]">Apr 20 .
 Science</span>
               </div>
           </div>
           <div class="w-full card">
-              <img src="images/3.avif" alt="" class="h-3/5 object-cover hover:grayscale-75 duration-400">
+              <img src="images/3.avif" alt="" class="h-3/5 rounded object-cover hover:grayscale-75 duration-400">
               <div class="h-2/5 flex flex-wrap *:w-full  content-center  gap-4">
-                     <h3 class="text-[30px] lg:text-[18px] font-[600]">Exploring Functionality in Everyday Design</h3>
+                     <h3 class="py-3 text-[30px] hover:text-gray-700 duration-400 lg:text-[18px] font-[600]">Exploring Functionality in Everyday Design</h3>
                      <span class="text-[16px] lg:text-[14px]">Aug 6 .
 Science</span>
               </div>
@@ -137,9 +192,9 @@ Science</span>
         <div class="w-full order-1 lg:order-2 lg:w-3/6  ">
           <div
             class="flex flex-wrap  h-[110vh] *:w-full ">
-             <img src="images/2.avif" alt="" class="h-3/5 object-cover hover:grayscale-75 duration-400">
+             <img src="images/2.avif" alt="" class="h-3/5 rounded object-cover hover:grayscale-75 duration-400">
               <div class="h-2/5 flex flex-wrap *:w-full content-start  gap-3 pt-[20px]">
-  <h3 class="text-[45px] md:text-[45px] xl:text-[55px] md:leading-14 font-[600]">Transforming Visions Into Solutions for Your Business</h3>
+  <h3 class="text-[45px] md:text-[45px] xl:text-[55px] md:leading-14 font-[600] hover:text-gray-700 duration-400 cursor-pointer py-3">Transforming Visions Into Solutions for Your Business</h3>
                      <span class="text-[16px] lg:text-[16px]">Coverage on Market Trends, Industry Innovations, and Strategic Moves
 </span>
               </div>
@@ -150,31 +205,478 @@ Science</span>
         >
        <div class="card w-full ">
               <div class="h-1/4 flex  justify-center content-start border-b flex-wrap *:w-full">
-                     <h4 class="text-[30px] lg:text-[20px] font-[700]">Trends and Inspiration</h4>
-                     <span class=" text-[16px] lg:text-[14px]">May 7 . Economy</span>
+                     <h4 class="text-[30px] lg:text-[20px] font-[700] hover:text-gray-700 duration-400 cursor-pointer">Trends and Inspiration</h4>
+                     <span class="hover:text-red-700 text-[16px] lg:text-[14px] ">May 7 . Economy</span>
               </div>
               <div class="h-1/4 flex justify-center content-start border-b flex-wrap *:w-full">
-                     <h4 class="text-[30px] lg:text-[20px] font-[700]">Refined Style Insights</h4>
-                     <span class=" text-[16px] lg:text-[14px]">Feb 10 . Economy</span>
+                     <h4 class="text-[30px] lg:text-[20px] font-[700] hover:text-gray-700 duration-400 cursor-pointer">Refined Style Insights</h4>
+                     <span class="hover:text-red-700 text-[16px] lg:text-[14px] ">Feb 10 . Economy</span>
               </div>
               <div class="h-1/4 flex justify-center content-start border-b flex-wrap *:w-full">
-                     <h4 class="text-[30px] lg:text-[20px] font-[700]">Expressions Unveiled</h4>
-                     <span class=" text-[16px] lg:text-[14px]">Sep 20 . Economy</span>
+                     <h4 class="text-[30px] lg:text-[20px] font-[700] hover:text-gray-700 duration-400 cursor-pointer">Expressions Unveiled</h4>
+                     <span class="hover:text-red-700 text-[16px] lg:text-[14px] ">Sep 20 . Economy</span>
               </div>
        </div>
        <div class="card w-full ">
-              <img src="images/4.avif" alt="" class="h-3/5 object-cover hover:grayscale-75 duration-400">
+              <img src="images/4.avif" alt="" class="h-3/5 rounded object-cover hover:grayscale-75 duration-400">
               <div class="h-2/5 flex flex-wrap *:w-full  content-center  gap-4">
-                     <h3 class="text-[30px] lg:text-[18px] font-[600]">Exploring Functionality in Everyday Design</h3>
-                     <span class="text-[16px] lg:text-[14px]">Feb 2 .
+                     <h3 class="py-3 text-[30px] hover:text-gray-700 duration-400 lg:text-[18px] font-[600]">Exploring Functionality in Everyday Design</h3>
+                     <span class="text-[16px] lg:text-[14px] hover:text-red-700
+hover:text-red-700
+hover:text-red-700">Feb 2 .
 Business</span>
               </div>
        </div>
        </div>
       </div>
-    </section>
+    </section> -->
     <!-- section - 2 //////////////////////////////////////////////////////////////////-->
-     <section class="w-full py-[100px] text-white px-4 lg:px-[70px] bg-black">
+     <section class="w-full py-[50px] lg:py-[100px] text-white px-4 lg:px-[70px] bg-black">
+      <div class="row mb-[50px]">
+        <h4 class="w-full justify-start items-center text-[32px]  font-[700] uppercase text-white">Science</h4>
+      </div>
+      <div class="row gap-8 *:w-full *:h-[450px] lg:*:w-1/5 lg:*:grow-1 lg:*:h-[370px] *:relative *:rounded *:overflow-hidden">
+        <figure>
+          <img src="images/5.avif" alt="" class="hover:grayscale-100 absolute top-0 left-0 object-cover h-full w-full">
+          <div class="blurredCaption">
+            <span class="text-white text-[15px] w-full">Dec 2nd . Economy</span>
+            <h4 class="text-[20px]  sm:w-1/2 lg:w-full  text-white font-[700] ">Trends and Inspiration</h4>
+          </div>
+        </figure>
+        <figure>
+          <img src="images/6.avif" alt="" class="hover:grayscale-100 absolute top-0 left-0 object-cover h-full w-full">
+          <div class="blurredCaption">
+            <span class="text-white text-[15px] w-full">May 5 . Technology</span>
+            <h4 class="text-[20px]  sm:w-1/2 lg:w-full  text-white font-[700]">Insights into the World of Design</h4>
+          </div>
+        </figure>
+        <figure>
+          <img src="images/7.avif" alt="" class="hover:grayscale-100 absolute top-0 left-0 object-cover h-full w-full">
+          <div class="blurredCaption">
+            <span class="text-white text-[15px] w-full">July 24 . Science</span>
+            <h4 class="text-[20px]  sm:w-1/2 lg:w-full  text-white font-[700]">Crafting Tomorrow’s World</h4>
+          </div>
+        </figure>
+        <figure>
+          <img src="images/8.avif" alt="" class="hover:grayscale-100 absolute top-0 left-0 object-cover h-full w-full">
+          <div class="blurredCaption">
+            <span class="text-white text-[15px] w-full">Mar 13 . Business</span>
+            <h4 class="text-[20px]  sm:w-1/2 lg:w-full  text-white font-[700]">The Power of Thoughtful Design</h4>
+          </div>
+        </figure>
+      </div>
      </section>
+     <!-- scroll section //////////////////////////////////////////////////////////////////  -->
+     <div class="w-full overflow-hidden whitespace-nowrap  py-8  ">
+      <div class=" w-full border border-white animate-scroll pl-[100%]">
+        <p class="text-[40px] md:text-[80px] lg:text-[120px] xl:text-[150px] text-black font-bold">Exploring New Frontiers of Creativity  Exploring New Frontiers of Creativity</p>
+      </div>
+     </div> 
+     <!-- section 3 ////////////////////////////////////////////////////////////////// -->
+     <section class="w-full py-[50px] lg:py-[100px] px-4 lg:px-[70px] bg-white">
+      <div class="row mb-[50px]">
+        <h4 class="w-full justify-start items-center text-[32px]  font-[700] uppercase text-black">business</h4>
+      </div>
+      <div class="row *:grow-1 gap-8 ">
+        <div class="card w-full md:w-1/3 lg:w-1/5  ">
+          <img src="images/9.avif" alt="" class="h-3/5 rounded object-cover hover:grayscale-75 duration-400">
+              <div class="h-2/5 flex flex-wrap *:w-full  content-start  ">
+
+                     <h3 class="text-[30px] py-3 hover:text-gray-700 duration-400 lg:text-[18px] font-[700]">Expressions Unveiled</h3>
+                                       <span class="text-[16px] lg:text-[14px]">Nov 10 .
+Business</span>
+                   
+              </div>
+        </div>
+        <div class="card w-full md:w-1/3 lg:w-1/5  ">
+           <img src="images/10.avif" alt="" class="h-3/5 rounded object-cover hover:grayscale-75 duration-400">
+              <div class="h-2/5 flex flex-wrap *:w-full  content-start  ">
+
+                     <h3 class="text-[30px] py-3 hover:text-gray-700 duration-400 lg:text-[18px] font-[700]">Masterpiece Insights</h3>
+                                          <span class="text-[16px] lg:text-[14px]">Dec 2nd .
+Economy</span>
+                
+              </div>
+        </div>
+        <div class="card w-full md:w-1/3 lg:w-1/5  ">
+           <img src="images/11.avif" alt="" class="h-3/5 rounded object-cover hover:grayscale-75 duration-400">
+              <div class="h-2/5 flex flex-wrap *:w-full  content-start  ">
+                     <h3 class="text-[30px] py-3 hover:text-gray-700 duration-400 lg:text-[18px] font-[700]">Sculpting the Imagination Exploring Artistic Expressions</h3>
+                                       <span class="text-[16px] lg:text-[14px]">Sep 14 .
+Science</span>
+                   
+              </div>
+        </div>
+        <div class="card w-full md:w-1/3 lg:w-1/5  ">
+           <img src="images/12.avif" alt="" class="h-3/5 rounded object-cover hover:grayscale-75 duration-400">
+              <div class="h-2/5 flex flex-wrap *:w-full  content-start  ">
+                     <h3 class="text-[30px] py-3 hover:text-gray-700 duration-400 lg:text-[18px] font-[700]">Color Journey</h3>
+                          <span class="text-[16px] lg:text-[14px]">Apr 14 .
+Business</span>
+              </div>
+        </div>
+      </div>
+     <figure class="w-full relative h-[400px] md:h-[500px] lg:h-[550px] mt-8 rounded overflow-hidden">
+      <img src="images/13.avif" alt="" class="absolute w-full h-full top-0 left-0 object-cover hover:grayscale-100 cursor-pointer">
+      <div class="blurredCaption w-1/2 md:w-1/4">
+        <span class="text-white text-[15px] w-full">
+Jan 18. 2023
+Business</span>
+            <h4 class="text-[24px]  sm:w-1/2 lg:w-full lg:text-[34px] xl:text-[36px]  text-white font-[700] ">Artful Inspirations</h4>
+      </div>
+     </figure>
+     </section>
+     <!-- section 4 /////////////////////////////////////////////////////////////////  -->
+      <section class="w-full py-[50px] lg:py-[100px] px-4 lg:px-[70px] bg-black">
+        <div class="row border *:w-full *:text-center ">
+          <h5 class="text-white text-[35px]  md:text-[45px] lg:text-[60px] xl:text-[70px] font-bold">Newsletter</h5>
+          <p class="my-5 text-white text-[16px] lg:text-[18px] ">In Tune with Revolutionary Moments
+</p>
+          <form action="" class="row *:grow-1 *:rounded sm:*:grow-0 *:border *:h-[45px] justify-center items-center gap-3">
+            <input type="email" placeholder="Email" class="w-5/12 sm:w-6/12 md:w-7/24 bg-white outline-none pl-3 ">
+            <a href="" class="w-2/12 sm:w-3/12 md:w-3/24 flex capitalize  justify-center items-center border border-white  text-white bg-black hover:bg-white hover:text-black">subscribe</a>
+          </form>
+        </div>
+      </section>
+      <!-- section 5 /////////////////////////////////////////////////////////////////  -->
+       <section class="w-full py-[50px] lg:py-[100px] px-4 lg:px-[70px] bg-white">
+        <div class="row mb-[50px] ">
+        <h4 class="w-full justify-start items-center text-[32px] font-[700] uppercase text-black">Economy</h4>
+      </div>
+      <div class="row  *:grow-1 gap-4 sm:gap-8 lg:gap-6 ">
+          <div class="card w-full md:w-1/3 lg:w-1/4  ">
+          <img src="images/14.avif" alt="" class="h-3/5 rounded object-cover hover:grayscale-75 duration-400">
+              <div class="h-2/5 flex flex-wrap *:w-full  content-start  ">
+
+                     <h3 class="text-[30px] py-3 hover:text-gray-700 duration-400 lg:text-[18px] font-[700]">Refined Style Insights</h3>
+                                       <span class="text-[16px] lg:text-[14px]">Jun 11 .
+Economy</span>
+                   
+              </div>
+        </div>
+         <div class="card w-full md:w-1/3 lg:w-1/4  ">
+          <img src="images/15.avif" alt="" class="h-3/5 rounded object-cover hover:grayscale-75 duration-400">
+              <div class="h-2/5 flex flex-wrap *:w-full  content-start  ">
+
+                     <h3 class="text-[30px] py-3 hover:text-gray-700 duration-400 lg:text-[18px] font-[700]">Abstract Horizons</h3>
+                                       <span class="text-[16px] lg:text-[14px]">Jan 10 .
+Economy</span>
+                   
+              </div>
+        </div>
+         <div class="card w-full md:w-1/3 lg:w-1/4  ">
+          <img src="images/16.avif" alt="" class="h-3/5 rounded object-cover hover:grayscale-75 duration-400">
+              <div class="h-2/5 flex flex-wrap *:w-full  content-start  ">
+
+                     <h3 class="text-[30px] py-3 hover:text-gray-700 duration-400 lg:text-[18px] font-[700]">Chic Living Daily</h3>
+                                       <span class="text-[16px] lg:text-[14px]">Feb 22 .
+Economy</span>
+                   
+              </div>
+        </div>
+         <div class="card w-full md:w-1/3 lg:w-1/4  ">
+          <img src="images/17.avif" alt="" class="h-3/5 rounded object-cover hover:grayscale-75 duration-400">
+              <div class="h-2/5 flex flex-wrap *:w-full  content-start  ">
+
+                     <h3 class="text-[30px] py-3 hover:text-gray-700 duration-400 lg:text-[18px] font-[700]">Bold Fashion Choices</h3>
+                                       <span class="text-[16px] lg:text-[14px]">Mar 20 .
+Economy</span>
+                   
+              </div>
+        </div>
+         <div class="card w-full md:w-1/3 lg:w-1/4  ">
+          <img src="images/18.avif" alt="" class="h-3/5 rounded object-cover hover:grayscale-75 duration-400">
+              <div class="h-2/5 flex flex-wrap *:w-full  content-start  ">
+
+                     <h3 class="text-[30px] py-3 hover:text-gray-700 duration-400 lg:text-[18px] font-[700]">The Aesthetic Flow</h3>
+                                       <span class="text-[16px] lg:text-[14px]">May 5 .
+Economy</span>
+                   
+              </div>
+        </div>
+         <div class="card w-full md:w-1/3 lg:w-1/4  ">
+          <img src="images/19.avif" alt="" class="h-3/5 rounded object-cover hover:grayscale-75 duration-400">
+              <div class="h-2/5 flex flex-wrap *:w-full  content-start  ">
+
+                     <h3 class="text-[30px] py-3 hover:text-gray-700 duration-400 lg:text-[18px] font-[700]">Polished To Perfection</h3>
+                                       <span class="text-[16px] lg:text-[14px]">July 20 .
+Economy</span>
+                   
+              </div>
+        </div>
+      </div>
+       </section>
+       <!-- section 6 ////////////////////////////////////////////////////////////////-->
+        <section class="w-full  py-[50px] lg:py-[100px] px-4 lg:px-[70px] bg-white">
+          <figure class="row  justify-center relative ">
+            <img src="images/20.avif" alt="" class=" w-full rounded lg:w-3/4 h-full object-cover">
+            <div class="flex w-[150px] h-[50px] lg:w-[250px] lg:h-[100px]  absolute top-[calc(50%-25px)] left-[calc(50%-75px)] lg:top-[calc(50%-50px)] lg:left-[calc(50%-125px)]
+            *:h-full *:">
+            <span class="w-[50px] lg:w-[100px] rounded-full bg-white flex items-center justify-center ">
+              <img src="images/21.webp" alt="" class=" object-cover">
+            </span>
+            <span class="w-[100px] lg:text-[20px] lg:w-[150px] capitalize font-bold justify-center items-center flex">Live Now</span>
+          </div>
+          </figure>
+        </section>
+         <!-- section 7 /////////////////////////////////////////////////////////////////  -->
+       <section class="w-full py-[50px] lg:py-[100px] px-4 lg:px-[70px] bg-black">
+        <div class="row mb-[50px] items-center  ">
+        <h5 class="w-full lg:w-1/3 justify-start lg:justify-start  items-center text-[16px] lg:text-[22px] font-[700] uppercase text-white">Trend Insights</h5>
+        <h4 class="w-full lg:w-2/3  lg:justify-start lg:text-start  items-center text-[30px] lg:text-[50px] font-[700] capitalize text-white">Statistically Speaking</h4>
+      </div>
+      <div class="row *:border mt-10">
+        <div class="w-1/3 p-2 flex flex-wrap *:w-full *:flex *:justify-center text-center">
+          <span class="uppercase text-[20px] md:text-[23px] lg:text-[70px] font-bold text-white">120K</span>
+            <span class="text-white text-[14px] md:text-[16px] lg:text-[20px]">New Subscribers</span>
+        </div>
+        <div class="w-1/3 p-2 flex flex-wrap *:w-full *:flex *:justify-center text-center">
+          <span class="uppercase text-[20px] md:text-[23px] lg:text-[70px] font-bold text-white">6.3K</span>
+            <span class="text-white text-[14px] md:text-[16px] lg:text-[20px]">Articles published</span>
+        </div>
+        <div class="w-1/3 p-2 flex flex-wrap *:w-full *:flex *:justify-center text-center">
+          <span class="uppercase text-[20px] md:text-[23px] lg:text-[70px] font-bold text-white">+44%</span>
+            <span class="text-white text-[14px] md:text-[16px] lg:text-[20px]">Traffic Increased by</span>
+        </div>
+      </div>
+       </section>
+       <!-- SECTION 8 ////////////////////////////////////////////////////////-->
+       <section class="w-full py-[50px] lg:py-[100px] px-4 lg:px-[70px] bg-white">
+        <div class="row mb-[50px] ">
+        <h4 class="w-full justify-start items-center text-[32px] font-[700] uppercase text-black">ALL PUBLICATIONS</h4>
+      </div>
+      <div class="row *:grow-1 gap-8">
+           <div class="card w-full md:w-1/3 lg:w-1/5  ">
+          <img src="images/2.avif" alt="" class="h-3/5 rounded object-cover hover:grayscale-75 duration-400">
+              <div class="h-2/5 flex flex-wrap *:w-full  content-start  ">
+
+                     <h3 class="text-[30px] py-3 hover:text-gray-700 duration-400 lg:text-[18px] font-[700]">The Future of Business and Innovation</h3>
+                                       <span class="text-[16px] lg:text-[14px]">May 5 .
+Economy</span>
+                   
+              </div>
+        </div>
+            <div class="card w-full md:w-1/3 lg:w-1/5  ">
+          <img src="images/5.avif" alt="" class="h-3/5 rounded object-cover hover:grayscale-75 duration-400">
+              <div class="h-2/5 flex flex-wrap *:w-full  content-start  ">
+
+                     <h3 class="text-[30px] py-3 hover:text-gray-700 duration-400 lg:text-[18px] font-[700]">Exploring Functionality in Everyday Design</h3>
+                                       <span class="text-[16px] lg:text-[14px]">May 5 .
+Economy</span>
+                   
+              </div>
+        </div>
+            <div class="card w-full md:w-1/3 lg:w-1/5  ">
+          <img src="images/9.avif" alt="" class="h-3/5 rounded object-cover hover:grayscale-75 duration-400">
+              <div class="h-2/5 flex flex-wrap *:w-full  content-start  ">
+
+                     <h3 class="text-[30px] py-3 hover:text-gray-700 duration-400 lg:text-[18px] font-[700]">Sculpting the Imagination Exploring Artistic Expressions</h3>
+                                       <span class="text-[16px] lg:text-[14px]">May 5 .
+Economy</span>
+                   
+              </div>
+        </div>
+            <div class="card w-full md:w-1/3 lg:w-1/5  ">
+          <img src="images/14.avif" alt="" class="h-3/5 rounded object-cover hover:grayscale-75 duration-400">
+              <div class="h-2/5 flex flex-wrap *:w-full  content-start  ">
+
+                     <h3 class="text-[30px] py-3 hover:text-gray-700 duration-400 lg:text-[18px] font-[700]">The Aesthetic Flow</h3>
+                                       <span class="text-[16px] lg:text-[14px]">May 5 .
+Economy</span>
+                   
+              </div>
+        </div>
+            <div class="card w-full md:w-1/3 lg:w-1/5  ">
+          <img src="images/4.avif" alt="" class="h-3/5 rounded object-cover hover:grayscale-75 duration-400">
+              <div class="h-2/5 flex flex-wrap *:w-full  content-start  ">
+
+                     <h3 class="text-[30px] py-3 hover:text-gray-700 duration-400 lg:text-[18px] font-[700]">Polished To Perfection</h3>
+                                       <span class="text-[16px] lg:text-[14px]">May 5 .
+Economy</span>
+                   
+              </div>
+        </div>
+            <div class="card w-full md:w-1/3 lg:w-1/5  ">
+          <img src="images/10.avif" alt="" class="h-3/5 rounded object-cover hover:grayscale-75 duration-400">
+              <div class="h-2/5 flex flex-wrap *:w-full  content-start  ">
+
+                     <h3 class="text-[30px] py-3 hover:text-gray-700 duration-400 lg:text-[18px] font-[700]">Expressions Unveiled</h3>
+                                       <span class="text-[16px] lg:text-[14px]">May 5 .
+Economy</span>
+                   
+              </div>
+        </div>
+            <div class="card w-full md:w-1/3 lg:w-1/5  ">
+          <img src="images/6.avif" alt="" class="h-3/5 rounded object-cover hover:grayscale-75 duration-400">
+              <div class="h-2/5 flex flex-wrap *:w-full  content-start  ">
+
+                     <h3 class="text-[30px] py-3 hover:text-gray-700 duration-400 lg:text-[18px] font-[700]">Chic Living Daily</h3>
+                                       <span class="text-[16px] lg:text-[14px]">May 5 .
+Economy</span>
+                   
+              </div>
+        </div>
+            <div class="card w-full md:w-1/3 lg:w-1/5  ">
+          <img src="images/11.avif" alt="" class="h-3/5 rounded object-cover hover:grayscale-75 duration-400">
+              <div class="h-2/5 flex flex-wrap *:w-full  content-start  ">
+
+                     <h3 class="text-[30px] py-3 hover:text-gray-700 duration-400 lg:text-[18px] font-[700]">Refined Style Insights</h3>
+                                       <span class="text-[16px] lg:text-[14px]">May 5 .
+Economy</span>
+                   
+              </div>
+        </div>
+            <div class="card w-full md:w-1/3 lg:w-1/5  ">
+          <img src="images/7.avif" alt="" class="h-3/5 rounded object-cover hover:grayscale-75 duration-400">
+              <div class="h-2/5 flex flex-wrap *:w-full  content-start  ">
+
+                     <h3 class="text-[30px] py-3 hover:text-gray-700 duration-400 lg:text-[18px] font-[700]">Sculpting the Imagination Exploring Artistic Expressions</h3>
+                                       <span class="text-[16px] lg:text-[14px]">May 5 .
+Economy</span>
+                   
+              </div>
+        </div>
+            <div class="card w-full md:w-1/3 lg:w-1/5  ">
+          <img src="images/16.avif" alt="" class="h-3/5 rounded object-cover hover:grayscale-75 duration-400">
+              <div class="h-2/5 flex flex-wrap *:w-full  content-start  ">
+
+                     <h3 class="text-[30px] py-3 hover:text-gray-700 duration-400 lg:text-[18px] font-[700]">Masterpiece Insights
+</h3>
+                                       <span class="text-[16px] lg:text-[14px]">May 5 .
+Economy</span>
+                   
+              </div>
+        </div>
+            <div class="card w-full md:w-1/3 lg:w-1/5  ">
+          <img src="images/12.avif" alt="" class="h-3/5 rounded object-cover hover:grayscale-75 duration-400">
+              <div class="h-2/5 flex flex-wrap *:w-full  content-start  ">
+
+                     <h3 class="text-[30px] py-3 hover:text-gray-700 duration-400 lg:text-[18px] font-[700]">Color Journey</h3>
+                                       <span class="text-[16px] lg:text-[14px]">May 5 .
+Economy</span>
+                   
+              </div>
+        </div>
+            <div class="card w-full md:w-1/3 lg:w-1/5  ">
+          <img src="images/8.avif" alt="" class="h-3/5 rounded object-cover hover:grayscale-75 duration-400">
+              <div class="h-2/5 flex flex-wrap *:w-full  content-start  ">
+
+                     <h3 class="text-[30px] py-3 hover:text-gray-700 duration-400 lg:text-[18px] font-[700]">Artful Inspiration</h3>
+                                       <span class="text-[16px] lg:text-[14px]">May 5 .
+Economy</span>
+                   
+              </div>
+        </div>
+            <div class="card w-full md:w-1/3 lg:w-1/5  ">
+          <img src="images/17.avif" alt="" class="h-3/5 rounded object-cover hover:grayscale-75 duration-400">
+              <div class="h-2/5 flex flex-wrap *:w-full  content-start  ">
+
+                     <h3 class="text-[30px] py-3 hover:text-gray-700 duration-400 lg:text-[18px] font-[700]">Mastering From Functioning and Flow</h3>
+                                       <span class="text-[16px] lg:text-[14px]">May 5 .
+Economy</span>
+                   
+              </div>
+        </div>
+            <div class="card w-full md:w-1/3 lg:w-1/5  ">
+          <img src="images/1.avif" alt="" class="h-3/5 rounded object-cover hover:grayscale-75 duration-400">
+              <div class="h-2/5 flex flex-wrap *:w-full  content-start  ">
+
+                     <h3 class="text-[30px] py-3 hover:text-gray-700 duration-400 lg:text-[18px] font-[700]">Polished To Perfection</h3>
+                                       <span class="text-[16px] lg:text-[14px]">May 5 .
+Economy</span>
+                   
+              </div>
+        </div>
+            <div class="card w-full md:w-1/3 lg:w-1/5  ">
+          <img src="images/22.avif" alt="" class="h-3/5 rounded object-cover hover:grayscale-75 duration-400">
+              <div class="h-2/5 flex flex-wrap *:w-full  content-start  ">
+
+                     <h3 class="text-[30px] py-3 hover:text-gray-700 duration-400 lg:text-[18px] font-[700]">Exploring Functionality in Everyday Design</h3>
+                                       <span class="text-[16px] lg:text-[14px]">May 5 .
+Economy</span>
+                   
+              </div>
+        </div>
+            <div class="card w-full md:w-1/3 lg:w-1/5  ">
+          <img src="images/18.avif" alt="" class="h-3/5 rounded object-cover hover:grayscale-75 duration-400">
+              <div class="h-2/5 flex flex-wrap *:w-full  content-start  ">
+
+                     <h3 class="text-[30px] py-3 hover:text-gray-700 duration-400 lg:text-[18px] font-[700]">The Aesthetic Flow</h3>
+                                       <span class="text-[16px] lg:text-[14px]">May 5 .
+Economy</span>
+                   
+              </div>
+        </div>
+            <div class="card w-full md:w-1/3 lg:w-1/5  ">
+          <img src="images/13.avif" alt="" class="h-3/5 rounded object-cover hover:grayscale-75 duration-400">
+              <div class="h-2/5 flex flex-wrap *:w-full  content-start  ">
+
+                     <h3 class="text-[30px] py-3 hover:text-gray-700 duration-400 lg:text-[18px] font-[700]">The Aesthetic Flow</h3>
+                                       <span class="text-[16px] lg:text-[14px]">May 5 .
+Economy</span>
+                   
+              </div>
+        </div>
+            <div class="card w-full md:w-1/3 lg:w-1/5  ">
+          <img src="images/3.avif" alt="" class="h-3/5 rounded object-cover hover:grayscale-75 duration-400">
+              <div class="h-2/5 flex flex-wrap *:w-full  content-start  ">
+
+                     <h3 class="text-[30px] py-3 hover:text-gray-700 duration-400 lg:text-[18px] font-[700]">Exploring Functionality in Everyday Design</h3>
+                                       <span class="text-[16px] lg:text-[14px]">May 5 .
+Economy</span>
+                   
+              </div>
+        </div>
+            <div class="card w-full md:w-1/3 lg:w-1/5  ">
+          <img src="images/19.avif" alt="" class="h-3/5 rounded object-cover hover:grayscale-75 duration-400">
+              <div class="h-2/5 flex flex-wrap *:w-full  content-start  ">
+
+                     <h3 class="text-[30px] py-3 hover:text-gray-700 duration-400 lg:text-[18px] font-[700]">Masterpiece Insights</h3>
+                                       <span class="text-[16px] lg:text-[14px]">May 5 .
+Economy</span>
+                   
+              </div>
+        </div>
+            <div class="card w-full md:w-1/3 lg:w-1/5  ">
+          <img src="images/15.avif" alt="" class="h-3/5 rounded object-cover hover:grayscale-75 duration-400">
+              <div class="h-2/5 flex flex-wrap *:w-full  content-start  ">
+
+                     <h3 class="text-[30px] py-3 hover:text-gray-700 duration-400 lg:text-[18px] font-[700]">Sculpting the Imagination Exploring Artistic Expressions</h3>
+                                       <span class="text-[16px] lg:text-[14px]">May 5 .
+Economy</span>
+                   
+              </div>
+        </div>
+
+      </div>
+      </section>
+      <!-- footer  //////////////////////////////////////////////////////////////-->
+       <footer class="w-full py-[50px] lg:py-[100px] px-4 lg:px-[70px] bg-black">
+        <ul class="row  h-fit justify-center">
+          <li class="p-4 md:p-6 xl:p-8"><a href="" class="text-[12px] uppercase text-white hover:text-white/60 duration-400">about</a></li>
+          <li class="p-4 md:p-6 xl:p-8"><a href="" class="text-[12px] uppercase text-white hover:text-white/60 duration-400">science</a></li>
+          <li class="p-4 md:p-6 xl:p-8"><a href="" class="text-[12px] uppercase text-white hover:text-white/60 duration-400">economy</a></li>
+          <li class="p-4 md:p-6 xl:p-8"><a href="" class="text-[12px] uppercase text-white hover:text-white/60 duration-400">business</a></li>
+          <li class="p-4 md:p-6 xl:p-8"><a href="" class="text-[12px] uppercase text-white hover:text-white/60 duration-400">contact</a></li>
+          <li class="p-4 md:p-6 xl:p-8"><a href="" class="text-[12px] uppercase text-white hover:text-white/60 duration-400">style guide</a></li>
+          <li class="p-4 md:p-6 xl:p-8"><a href="" class="text-[12px] uppercase text-white hover:text-white/60 duration-400">licensing</a></li>
+          <li class="p-4 md:p-6 xl:p-8"><a href="" class="text-[12px] uppercase text-white hover:text-white/60 duration-400">changelog</a></li>
+        </ul>
+        <div class="row border justify-center items-center mt-8">
+          <div class="flex *:tracking-widest *:text-[40px] sm:*:text-[50px] *:lg:text-[100px] *:flex border border-white items-center">
+             <span class="pl-[20px] py-[10px] font-bold bg-black text-white justify-end items-center">DIS</span>
+          <span class="pl-1 pr-[20px] py-[10px] font-bold bg-white text-black justify-start items-center"
+            >PATCH</span
+          >
+          </div>
+        </div>
+        <ul class="row border h-fit justify-center gap-2
+         items-center *:border mt-20">
+          <li><a href="" class="flex w-full h-full py-1 px-6 md:px-10 text-[14px] hover:bg-black hover:border-white hover:text-white hover:border duration-400 text-black bg-white rounded-[15px]">Twitter</a></li>
+          <li><a href="" class="flex w-full h-full py-1 px-6 md:px-10 text-[14px] hover:bg-black hover:border-white hover:text-white hover:border duration-400 text-black bg-white rounded-[15px]">Instagram</a></li>
+          <li><a href="" class="flex w-full h-full py-1 px-6 md:px-10 text-[14px] hover:bg-black hover:border-white hover:text-white hover:border duration-400 text-black bg-white rounded-[15px]">Facebook</a></li>
+        </ul>
+       </footer>
   </body>
 </html>
+
