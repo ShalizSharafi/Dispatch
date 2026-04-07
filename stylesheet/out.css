@@ -7,10 +7,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-700: oklch(50.5% 0.213 27.518);
-    --color-amber-300: oklch(87.9% 0.169 91.605);
-    --color-amber-400: oklch(82.8% 0.189 84.429);
-    --color-gray-500: oklch(55.1% 0.027 264.364);
     --color-gray-600: oklch(44.6% 0.03 256.802);
     --color-gray-700: oklch(37.3% 0.034 259.733);
     --color-black: #000;
@@ -21,6 +17,7 @@
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --animate-scroll: scroll 10s linear infinite;
+    --animate-fadeUp: fadeUp both;
   }
 }
 @layer base {
@@ -184,11 +181,20 @@
   .static {
     position: static;
   }
+  .end {
+    inset-inline-end: var(--spacing);
+  }
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
   .top-\[calc\(50\%-25px\)\] {
     top: calc(50% - 25px);
+  }
+  .right-2\.5 {
+    right: calc(var(--spacing) * 2.5);
+  }
+  .bottom-2\.5 {
+    bottom: calc(var(--spacing) * 2.5);
   }
   .left-0 {
     left: calc(var(--spacing) * 0);
@@ -243,9 +249,6 @@
   .h-1\/2 {
     height: calc(1 / 2 * 100%);
   }
-  .h-1\/4 {
-    height: calc(1 / 4 * 100%);
-  }
   .h-2\/5 {
     height: calc(2 / 5 * 100%);
   }
@@ -263,9 +266,6 @@
   }
   .h-\[60px\] {
     height: 60px;
-  }
-  .h-\[110vh\] {
-    height: 110vh;
   }
   .h-\[400px\] {
     height: 400px;
@@ -318,6 +318,9 @@
   .w-full {
     width: 100%;
   }
+  .animate-fadeUp {
+    animation: var(--animate-fadeUp);
+  }
   .animate-scroll {
     animation: var(--animate-scroll);
   }
@@ -326,9 +329,6 @@
   }
   .flex-wrap {
     flex-wrap: wrap;
-  }
-  .content-center {
-    align-content: center;
   }
   .content-start {
     align-content: flex-start;
@@ -420,9 +420,6 @@
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
-  .px-5 {
-    padding-inline: calc(var(--spacing) * 5);
-  }
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
   }
@@ -446,9 +443,6 @@
   }
   .py-\[50px\] {
     padding-block: 50px;
-  }
-  .pt-\[20px\] {
-    padding-top: 20px;
   }
   .pt-\[100px\] {
     padding-top: 100px;
@@ -510,13 +504,6 @@
   .text-\[40px\] {
     font-size: 40px;
   }
-  .text-\[45px\] {
-    font-size: 45px;
-  }
-  .font-\[600\] {
-    --tw-font-weight: 600;
-    font-weight: 600;
-  }
   .font-\[700\] {
     --tw-font-weight: 700;
     font-weight: 700;
@@ -551,6 +538,9 @@
   .outline-none {
     --tw-outline-style: none;
     outline-style: none;
+  }
+  .\[animation-timeline\:view\(\)\] {
+    animation-timeline: view();
   }
   .\*\:relative {
     :is(& > *) {
@@ -731,13 +721,6 @@
       }
     }
   }
-  .hover\:text-red-700 {
-    &:hover {
-      @media (hover: hover) {
-        color: var(--color-red-700);
-      }
-    }
-  }
   .hover\:text-white {
     &:hover {
       @media (hover: hover) {
@@ -850,11 +833,6 @@
       padding: calc(var(--spacing) * 6);
     }
   }
-  .md\:px-7 {
-    @media (width >= 48rem) {
-      padding-inline: calc(var(--spacing) * 7);
-    }
-  }
   .md\:px-10 {
     @media (width >= 48rem) {
       padding-inline: calc(var(--spacing) * 10);
@@ -895,12 +873,6 @@
       font-size: 80px;
     }
   }
-  .md\:leading-14 {
-    @media (width >= 48rem) {
-      --tw-leading: calc(var(--spacing) * 14);
-      line-height: calc(var(--spacing) * 14);
-    }
-  }
   .lg\:top-\[calc\(50\%-50px\)\] {
     @media (width >= 64rem) {
       top: calc(50% - 50px);
@@ -909,21 +881,6 @@
   .lg\:left-\[calc\(50\%-125px\)\] {
     @media (width >= 64rem) {
       left: calc(50% - 125px);
-    }
-  }
-  .lg\:order-1 {
-    @media (width >= 64rem) {
-      order: 1;
-    }
-  }
-  .lg\:order-2 {
-    @media (width >= 64rem) {
-      order: 2;
-    }
-  }
-  .lg\:order-3 {
-    @media (width >= 64rem) {
-      order: 3;
     }
   }
   .lg\:flex {
@@ -966,11 +923,6 @@
       width: calc(1 / 5 * 100%);
     }
   }
-  .lg\:w-1\/6 {
-    @media (width >= 64rem) {
-      width: calc(1 / 6 * 100%);
-    }
-  }
   .lg\:w-2\/3 {
     @media (width >= 64rem) {
       width: calc(2 / 3 * 100%);
@@ -984,11 +936,6 @@
   .lg\:w-3\/4 {
     @media (width >= 64rem) {
       width: calc(3 / 4 * 100%);
-    }
-  }
-  .lg\:w-3\/6 {
-    @media (width >= 64rem) {
-      width: calc(3 / 6 * 100%);
     }
   }
   .lg\:w-\[100px\] {
@@ -1026,11 +973,6 @@
       gap: calc(var(--spacing) * 6);
     }
   }
-  .lg\:px-\[60px\] {
-    @media (width >= 64rem) {
-      padding-inline: 60px;
-    }
-  }
   .lg\:px-\[70px\] {
     @media (width >= 64rem) {
       padding-inline: 70px;
@@ -1054,11 +996,6 @@
   .lg\:text-\[14px\] {
     @media (width >= 64rem) {
       font-size: 14px;
-    }
-  }
-  .lg\:text-\[16px\] {
-    @media (width >= 64rem) {
-      font-size: 16px;
     }
   }
   .lg\:text-\[18px\] {
@@ -1179,11 +1116,6 @@
       padding: calc(var(--spacing) * 8);
     }
   }
-  .xl\:px-\[100px\] {
-    @media (width >= 80rem) {
-      padding-inline: 100px;
-    }
-  }
   .xl\:text-\[18px\] {
     @media (width >= 80rem) {
       font-size: 18px;
@@ -1207,11 +1139,6 @@
   .xl\:text-\[50px\] {
     @media (width >= 80rem) {
       font-size: 50px;
-    }
-  }
-  .xl\:text-\[55px\] {
-    @media (width >= 80rem) {
-      font-size: 55px;
     }
   }
   .xl\:text-\[70px\] {
@@ -1246,7 +1173,9 @@
     display: flex;
     height: 450px;
     width: 100%;
+    animation: var(--animate-fadeUp);
     flex-wrap: wrap;
+    animation-timeline: view();
     :is(& > *) {
       width: 100%;
     }
@@ -1371,10 +1300,6 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-leading {
-  syntax: "*";
-  inherits: false;
-}
 @property --tw-backdrop-blur {
   syntax: "*";
   inherits: false;
@@ -1419,6 +1344,16 @@
     transform: translateX(-100%);
   }
 }
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -1442,7 +1377,6 @@
       --tw-drop-shadow-color: initial;
       --tw-drop-shadow-alpha: 100%;
       --tw-drop-shadow-size: initial;
-      --tw-leading: initial;
       --tw-backdrop-blur: initial;
       --tw-backdrop-brightness: initial;
       --tw-backdrop-contrast: initial;
