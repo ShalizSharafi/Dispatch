@@ -1,4 +1,4 @@
-# 🚀 Dispatch — Modern Editorial Landing Page
+# 🚀 Dispatch — Modern Editorial Responsive Landing Page
 
 A visually rich, editorial-style landing page built using **Tailwind CSS**, focused on layout precision, responsive behavior, and modern UI patterns.
 
