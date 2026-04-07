@@ -5,8 +5,6 @@ A visually rich, editorial-style landing page built using **Tailwind CSS**, focu
 🔗 **Live Demo**  
 https://shalizsharafi.github.io/Dispatch/
 
----
-
 ## 📌 Project Overview
 
 **Dispatch** is a multi-section editorial website inspired by modern digital magazines and SaaS landing pages. The project emphasizes:
@@ -18,32 +16,11 @@ https://shalizsharafi.github.io/Dispatch/
 
 This project demonstrates the ability to build **complex UI layouts without frameworks like React**, relying purely on HTML structure and Tailwind utilities.
 
----
-
-## 🧠 Key Technical Highlights
-
-### 1. Utility-First Styling (Tailwind CSS)
-- Extensive use of Tailwind classes for:
-  - Spacing (`px`, `py`, `gap`)
-  - Typography scaling
-  - Responsive breakpoints (`sm`, `md`, `lg`, `xl`)
-- Avoids custom CSS where possible → cleaner workflow
-
----
-
-### 2. Responsive Layout Architecture
-- Mobile-first responsive adjustments using:
-  - `flex` and `flex-wrap`
-  - Width control (`w-full`, `w-1/4`, etc.)
-  - Order manipulation (`order-1`, `order-2`, etc.)
-
 Example:
 - Sidebar → moves below content on smaller screens
 - Navigation → switches from menu to hamburger
 
----
-
-### 3. Complex Multi-Section Design
+### 1. Complex Multi-Section Design
 
 The page is structured into multiple content-driven sections:
 
@@ -56,47 +33,35 @@ The page is structured into multiple content-driven sections:
 - **Full Publication Grid**
 - **Footer Navigation**
 
----
-
-### 4. Component-Like Reusability
+### 2. Component-Like Reusability
 
 Although built in plain HTML, the project follows reusable patterns:
 
 - `card` structure reused across multiple sections
 - Consistent image + text layout
 - Repeated typography and spacing rules
-
-This mimics **component-based thinking (React-ready mindset)**.
-
----
-
-### 5. Visual Interactions & Effects
+- 
+### 3. Visual Interactions & Effects
 
 - Hover effects:
   - `grayscale` transitions on images
   - Text color transitions
 - Smooth UI feedback using Tailwind utilities
 - Custom animated marquee (`animate-scroll`)
-
----
-
-### 6. Positioning & Overlay Techniques
+- 
+### 4. Positioning & Overlay Techniques
 
 - Use of `absolute` positioning for:
   - Image overlays
   - Caption components (`blurredCaption`)
 - Layering with `relative` parent containers
 
----
-
-### 7. Fixed Header Navigation
+### 5. Fixed Header Navigation
 
 - Sticky/fixed header with:
   - Responsive navigation behavior
   - Search input (desktop only)
   - Mobile hamburger icon
-
----
 
 ## 🛠️ Tech Stack
 
@@ -105,19 +70,13 @@ This mimics **component-based thinking (React-ready mindset)**.
 - **CSS (minimal custom classes)**
 - **SVG icons**
 
----
-
 ## 📱 Responsiveness
 
 The layout adapts across:
 
 - **Mobile** (stacked layout)  
 - **Tablet** (adjusted grid)  
-- **Desktop** (multi-column editorial layout)  
-
-Some sections are still **desktop-optimized first**, with ongoing improvements for smaller screens.
-
----
+- **Desktop** (multi-column editorial layout)
 
 ## 🚧 Future Improvements
 
@@ -126,8 +85,6 @@ Some sections are still **desktop-optimized first**, with ongoing improvements f
 - Refactor into **React components**  
 - Add **dynamic content** (API or CMS)  
 - Improve **accessibility** (ARIA, semantic tags)  
-
----
 
 ## 💡 What This Project Demonstrates
 
